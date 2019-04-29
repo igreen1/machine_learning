@@ -1,14 +1,4 @@
 
-
-cifar10Data = tempdir;
-
-url = 'https://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz';
-
-helperCIFAR10Data.download(url,cifar10Data);
-figure
-thumbnails = trainIMG(:,:,:,1:100);
-montage(thumbnails)
-
 layers = [ ...
      imageInputLayer([32,32,3])
      convolution2dLayer(5,20)
